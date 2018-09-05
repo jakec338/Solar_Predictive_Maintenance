@@ -1,25 +1,20 @@
 
-# Introductionzz
+# Introduction
 
-This report evaluates the performance of different regression models at predicting the quality of a variety of Portuguese wines. A dataset has been used which describes red wine via 11 different features, including alcohol content, fixed acidity and quality. The task has been to assess the efficacy of different machine learning models in predicting the quality of a wine given the other features.  
+## Problem
+blah blahAs the world moves towards a decarbonised economy, the share of power production going to solar has increased dramatically. This increase in many countries has been fuelled by subsidies governments interested in achieving the sustainability targets that have been set both by themselves and the wider international community (ref, Bohringer paper). However in so doing so capacity has been expanded at a time when typically energy demand is falling (ref, eurostat). In many countries this has led to a slump in wholesale electricity prices (ref, Bohringer paper). For large scale utilities this has meant that profit margins have become increasingly thin. 
 
-This reports discusses four regression models for that were created to predict wine quality. This includes 3 linear basis function models polynomial, bayesian and radial basis as well as K-Nn. These models were selected to sample a selection of some of the most popular Linear regression models. By optimising each model, a fair comparison of  each models efficacy was made using the same scoring for each.
+As a result, solar utilities are paying more attention to what had previously been considered marginal losses. Three days of downtime results in a loss equivalent to 1% yield loss for solar plants, seriously impacting profitability in the current climate (ref, egen.io). If this downtime can be reduced, this will have a significant impact on the profitability of plant. If maintenance issues can be predicted in advance this can decrease the downtime of a panel or, ideally, prevent any downtime being experience at all. 
 
-## Performance Evaluation
+In a report analysing the potential impact of machine learning on several industries, predictive maintenance was found to have the greatest impact on the energy sector (ref, mckinsey). Solar panel plants contain a variety of different sensors. A typical 5MW solar PV plant has over 800 sensors which generate about 1 Terabyte of data in a week (ref, algoengines). This quantity of data makes it difficult to analyse in-house by plant operators but also provides a rich data set on which to use machine learning techniques to predict maintenance issues. 
 
-The metrics with which we have evaluated the performance of these models are as follows:
 
-- Root mean square error (${E}_{RMS}$): this is measure of prediction accuracy. RMSE disproportionately affects the points further from the actual results, therefore favouring predictions with small variance. This ensures that the metric is more sensitive to outlier values. This is the primary metric that we have used to asses our models. (${E}_{RMS}$) is described by:
+## Aims and Goals
+The prediction of maintenance issues is the primary concern for the client. The data has been provided in 2 data sets. The first is the SCADA (Supervisory Control and Data Access) data, the second containing the error codes that have been produced by each of the 6 inverters, segmented into 10 modules each. The error codes and their meanings are supplied by the Solar Panel manufacturer, Power Electronics (appendix). By analysing both, the project aim is to explore the potential for machine learning techniques to predict the generation of error codes. This can be achieved either as a binary class (will this inverter produce error code 19 in the next two days for example), or can give a probabilistic measurement of the likelihood of an error code being produced within a certain time frame. 
 
-\begin{align}{ E }_{ RMS }=\sqrt { \frac{ 2E({ { \mathbf{w}} }^{ * })}{ N }}
-\end{align}
+Should time permit, I will begin to put the model into production with renewable.ai?s engineering team. This may involve analysing a regular stream of data from the plant and producing an intelligible product for the end user. 
 
-- Mean absolute error (${ E }_{ M }$): this is a measure of the actual distance of the error from the prediction. This is less sensitive to large errors than   ${E}_{RMS}$, but gives a clear measure of how far predictions on average deviate from the target.
-- Mean absolute percentage error (${ E }_{ M \% }$): presenting mean absolute error as a percentage can help gauge the performance of the model in a more conceptual  way, helping to gauge how big the error is
-- Median absolute error (${ E }_{ \tilde { x }  }$): This is the middle most error of predictions. This measure is useful as it is unaffected by outliers giving a picture of how the general accuracy of the model
-- Variance (${ \sigma }^{ 2 }$): this measure highlights the precision marked by the spread of predictions. A low variance indicates that prediction are all made in a similar region with fewer outliers. However a model could have some issues with it's accuracy, this is why the variance needs to be used in conjunction with a mean value.  
-
-A function named `error_score.py`, was created which analysed predictions, making sure all the models were evaluated equally; enabling direct comparisons to be made.
+My personal aims are to deepen my knowledge or R and Python languages, both of which are likely to be used over the duration of this project. As well as this, I hope to gain a better understanding of the work flow of a typical data science project and of the wider industry. 
 
 ## Cross Validation
 

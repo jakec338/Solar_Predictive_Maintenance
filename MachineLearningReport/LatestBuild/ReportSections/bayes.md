@@ -14,7 +14,7 @@
 \end{table}
 
 ## Overview
-A Bayesian Model for linear regression aims to reduce the effect of over fitting, as well as provide a measure of the predictive distribution of the model. This is achieved by providing a prior probability distribution over the model parameters. The mean and covariance of this distribution along with the maximum likelihood estimates arrived at by linear model is used to calculate the posterior distributions. The posterior mean and covariance are given by the following equations respectively.
+bbbbbbbA Bayesian Model for linear regression aims to reduce the effect of over fitting, as well as provide a measure of the predictive distribution of the model. This is achieved by providing a prior probability distribution over the model parameters. The mean and covariance of this distribution along with the maximum likelihood estimates arrived at by linear model is used to calculate the posterior distributions. The posterior mean and covariance are given by the following equations respectively.
 
 \begin{align}
     { m }_{ n }={ S }_{ N }({ S }_{ 0 }^{ -1 }{ m }_{ 0 }+\beta { \Phi  }^{ T }t) \\

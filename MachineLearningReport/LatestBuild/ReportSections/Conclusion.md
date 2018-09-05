@@ -17,7 +17,7 @@
 \end{table}
 
 ## Comparison of Models
-In order to fairly compare the performance of the different models Table \ref{tab:comparison} describes the performance of our models in each of the five evaluation metrics. The following conclusions can be drawn from this reports analysis:
+In hhhhorder to fairly compare the performance of the different models Table \ref{tab:comparison} describes the performance of our models in each of the five evaluation metrics. The following conclusions can be drawn from this reports analysis:
 
 A Polynomial Regression model is far superior to the kNN. A kNN is simple to implement but does not return a model and is very resource intensive taking around twice the runtime, therefore were the dataset to grow in size, it may not be computationally feasible. As well as this the kNN model suffers from high variance issues, although it also has a low bias
 
